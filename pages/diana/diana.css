@@ -1,0 +1,110 @@
+*{  
+    padding: 0;  
+    margin: 0;  
+    box-sizing: border-box;  
+    -webkit-font-smoothing: antialiased;  
+  } 
+  
+
+  .navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.navbar .navbar-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+.navbar .navbar-list li {
+    padding: 40px;
+    cursor: pointer;
+}
+
+.navbar .navbar-list li:hover {
+    background-color: rgb(122, 122, 189);
+    color: white;
+}
+.navbar .navbar-list li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+/* .navbar .navbar-list :last-child{
+    justify-content: flex-end;
+} */
+
+
+
+  :root{  
+    --primary: rgb(29, 221, 189);  
+    --bgDark: rgb(12, 12, 12);  
+    --white: rgb(250, 250, 250);  
+    --secondary: rgb(0, 59, 50);  
+    --bgLight: rgb(190, 181, 181);  
+  }  
+
+  body{  
+    font-family: 'Poppins', sans-serif; 
+    color: black; 
+  }  
+  .container{ 
+     
+    max-width: 1152px;  
+    padding: 0 15px;  
+    margin: 0 auto; 
+    color: gray;  
+  }  
+ 
+  .hero .right h1{  
+    font-size: 4rem;  
+    font-weight: 100;  
+    line-height: 1.2;  
+    margin-bottom: 2rem;  
+  }  
+  .hero .right h1 span{  
+    color: var(--primary);  
+  }  
+  .hero .right p{  
+    line-height: 1.9;  
+    margin-bottom: 2rem;  
+  }  
+
+  .flex{  
+    display: flex;  
+  }  
+  .items-centre{  
+    align-items: center;  
+  }  
+
+  .btn{  
+    padding: 0.6rem 2rem;  
+    font-size: 1rem;  
+    font-weight: 600;  
+    border: 2px solid transparent;  
+    outline: none;  
+    cursor: pointer;  
+    text-transform: uppercase;  
+    transition: all .2s ease;  
+  }  
+  .btn-primary{  
+    background-color: var(--primary);  
+    color: var(--secondary);  
+    margin-top: -15rem; 
+    justify-content: flex-end;
+  }  
+  .btn-primary:hover{  
+    background: transparent;  
+    border-color: var(--primary);  
+    color: var(--primary);  
+  }  
+  .flex-1{  
+    flex: 1;  
+  }  
+
+ 
