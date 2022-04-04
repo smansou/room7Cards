@@ -23,8 +23,9 @@ section {
 
 /* topsidebar start */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
 }
 .topsidebar ul {
   list-style-type: none;
@@ -91,6 +92,24 @@ header {
   font-family: "Muli", sans-serif;
   font-size: 28px;
   font-weight: 600;
+}
+.background {
+  background: url(/ahmad/imgs/img13.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.aboutme::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #0007;
+  z-index: -1;
 }
 .aboutme p {
   width: 90%;
@@ -182,11 +201,11 @@ h2 {
   width: 100%;
   height: 100%;
   background-image: url(/ahmad/imgs/tesla.png);
-  transform: scale(0.5);
+  transform: scale(0.4);
   transition: all 1s ease;
 }
 .tesla:hover {
-  transform: scale(1);
+  transform: scale(0.65);
 }
 .tesla a {
   width: 100%;
