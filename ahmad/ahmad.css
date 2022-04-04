@@ -74,7 +74,7 @@ img {
 .cardcontainer {
   width: 22rem;
   height: 22rem;
-  background-color: #018f52;
+  background-color: gray;
   padding: 5px;
   border-radius: 20px;
 }
@@ -84,7 +84,7 @@ img {
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
-  color: #788697;
+  color: white;
 }
 .name {
   color: rgb(80, 13, 13);
@@ -176,4 +176,12 @@ h2 {
 }
 .img-12 {
   background-image: url(/ahmad/imgs/img12.jpg);
+}
+/* Projects */
+.tesla {
+  background-image: url(/ahmad/imgs/tesla.png);
+}
+.tesla a {
+  width: 100%;
+  height: 100%;
 }
