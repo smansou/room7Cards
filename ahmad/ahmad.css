@@ -17,6 +17,8 @@ body {
 }
 section {
   height: 100vh;
+  margin: 0 0 2rem 0;
+  padding: 0 2rem;
 }
 
 /* topsidebar start */
@@ -56,20 +58,18 @@ header {
 }
 
 /* about me with tags and cards */
-
-img {
-  width: 100%;
-  border-radius: 20px;
-  height: 214px;
-  object-fit: cover;
-}
-
 .aboutme {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.aboutme img {
+  width: 100%;
+  border-radius: 20px;
+  height: 214px;
+  object-fit: cover;
 }
 .cardcontainer {
   width: 22rem;
@@ -109,7 +109,7 @@ h2 {
   padding: 4rem;
 }
 .gallery {
-  height: 100%;
+  height: 120vh;
   width: 100%;
   display: grid;
   gap: 4rem;
@@ -117,8 +117,8 @@ h2 {
 }
 .img {
   border: solid yellow 2px;
-  width: 100%;
-  height: 100%;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
   display: block;
   background: url("") no-repeat center center/cover;
@@ -179,9 +179,26 @@ h2 {
 }
 /* Projects */
 .tesla {
+  width: 100%;
+  height: 100%;
   background-image: url(/ahmad/imgs/tesla.png);
+  transform: scale(0.5);
+  transition: all 1s ease;
+}
+.tesla:hover {
+  transform: scale(1);
 }
 .tesla a {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 946px) {
+  .tesla {
+    transform: scaleY(0);
+  }
+}
+@media (max-width: 639px) {
+  .topsidebar {
+    display: none;
+  }
 }
