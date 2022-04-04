@@ -116,7 +116,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .img {
-  border: solid rgb(87, 87, 29) 2px;
+  border: solid yellow 2px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -139,7 +139,7 @@ h2 {
   transition-property: color, bottom, background-color;
 }
 .places {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .img-1 {
   background-image: url(/ahmad/imgs/img1.jpg);
