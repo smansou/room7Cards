@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(-45deg, #00464b, #05050534, #0f0f0f);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    font-family: 'Libre Baskerville', serif;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+
+
+.main{
+    width:100vw;
+    display: flex;
+   position: relative;
+   /* justify-items: center ;
+   justify-content: center; */
+   align-items: center;
+   
+   
+}
+.main .statement{
+    font-size: 70px;
+    width: 500px;
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    font-weight: 500;
+    
+}
+
+.main img{
+    width: 30%;
+    max-width: 280px;
+    border-radius: 40%;
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    transform: translate(300px, -140px);
+    
+
+}
+
+
+.grid-box {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+   grid-template-rows: 1fr 10fr 1fr;
+   grid-gap: 2px;
+   padding: 10px;
+
+    
+   }
+
+  .sections .header{
+      display: flex;
+      justify-content: space-between;
+      /* position: relative; */
+  }
+  .hamburger-menu{
+      position: absolute;
+      right: 10px;
+      z-index: 15;
+  }
+   
+   .grid-box > div {
+    
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+   }
+
+   
+   @media(max-width: 800px){
+
+    .main img{
+        width: 60%;
+        max-width: 280px;
+        border-radius: 40%;
+        padding: 10px;
+       
+        transform: translate(0px, -140px);
+    
+    }
+    .main .statement{
+        font-size: 50px;
+        transform: translate(30px, 80px);
+        width: 440px
+    }
+
+    
+   
+}
+
+
+.statement::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.statement:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.statement::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #67f7fc93;
+  opacity: 80%;
+  z-index: -1;
+  transition: transform .3s ease;
+}
