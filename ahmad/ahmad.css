@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #84aadb;
+  --second-color: #b3d4ff;
+  --barcolor: #8f7139;
+  --hovercolor: #dbc18f;
+  --acolor: #47668f;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-color);
+}
+section {
+  height: 100vh;
+}
+
+/* topsidebar start */
+header {
+  position: sticky;
+  top: 0;
+}
+.topsidebar ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  font-size: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.topsidebar {
+  height: 3rem;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: var(--barcolor);
+}
+.topsidebar a {
+  text-decoration: none;
+  color: var(--main-color);
+  padding: 10px 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topsidebar li {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  text-align: center;
+  transition: all 1s ease;
+}
+.topsidebar li:hover {
+  font-size: 40px;
+  background-color: #8f2210;
+}
+
+/* about me with tags and cards */
+
+img {
+  width: 100%;
+  border-radius: 50px;
+  height: 214px;
+  object-fit: cover;
+}
+
+.aboutme {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardcontainer {
+  width: 22rem;
+  height: 22rem;
+  background-color: #018f52;
+  padding: 5px;
+  border-radius: 20px;
+}
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+.name {
+  color: rgb(80, 13, 13);
+  font-family: "Muli", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+.aboutme p {
+  width: 90%;
+  font-size: 14px;
+  color: #38db95;
+  line-height: 150%;
+}
+.aboutme h1 {
+  color: rgb(185, 53, 53);
+}
+/* gallery */
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 4rem;
+}
+.gallery {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.img {
+  border: solid yellow 2px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: url("") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.img:hover p {
+  bottom: 0;
+  color: black;
+  background-color: rgba(187, 187, 187, 0.7);
+}
+.img p {
+  position: relative;
+  background-color: transparent;
+  bottom: -2rem;
+  color: transparent;
+  transition: color 1s ease;
+  transition-property: color, bottom, background-color;
+}
+.places {
+  font-size: 1.5rem;
+}
+.img-1 {
+  background-image: url(/ahmad/imgs/img1.jpg);
+}
+.img-2 {
+  background-image: url(/ahmad/imgs/img2.jpg);
+}
+.img-3 {
+  background-image: url(/ahmad/imgs/img3.jpg);
+}
+.img-4 {
+  background-image: url(/ahmad/imgs/img4.jpg);
+}
+.img-5 {
+  background-image: url(/ahmad/imgs/img5.jpg);
+}
+.img-6 {
+  background-image: url(/ahmad/imgs/img6.jpg);
+}
+.img-7 {
+  background-image: url(/ahmad/imgs/img7.jpg);
+}
+.img-8 {
+  background-image: url(/ahmad/imgs/img8.jpg);
+}
+.img-9 {
+  background-image: url(/ahmad/imgs/img9.jpg);
+}
+.img-10 {
+  background-image: url(/ahmad/imgs/img10.jpg);
+}
+.img-11 {
+  background-image: url(/ahmad/imgs/img11.jpg);
+}
+.img-12 {
+  background-image: url(/ahmad/imgs/img12.jpg);
+}
